@@ -11,6 +11,8 @@ with open('//Users/xyang/Downloads/director_1.csv', 'rb') as f:
             a=c[row[3]]
             c[row[3]]=a+1
 print c
+
+
 def readJson():
     # Reading data back
     with open('//Users/xyang/Downloads//director_world/mockelasticdata.json', 'r') as f:
@@ -24,10 +26,6 @@ def writeJson(data):
     return config
 
 p=readJson()
-# p1=p['aggregations']
-# p2=p1['world_map']
-# p3=p2['buckets']
-# p3=p.get('aggregations').get('world_map').get('buckets')
 for each in p.get('aggregations').get('world_map').get('buckets'):
     a=each.get('doc_count')
     b=each.get('key')

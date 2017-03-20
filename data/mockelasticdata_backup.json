@@ -1,0 +1,1 @@
+{"hits": {"hits": [], "total": 30111166, "max_score": 0}, "_shards": {"successful": 3, "failed": 0, "total": 5}, "took": 492, "aggregations": {"world_map": {"buckets": [], "sum_other_doc_count": 0, "doc_count_error_upper_bound": 0}}, "timed_out": false}
